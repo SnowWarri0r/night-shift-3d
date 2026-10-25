@@ -193,6 +193,30 @@
     {
       "name": "visor",
       "hex": "#86afc8"
+    },
+    {
+      "name": "red_0",
+      "hex": "#5a1f22"
+    },
+    {
+      "name": "red_1",
+      "hex": "#9b3530"
+    },
+    {
+      "name": "red_2",
+      "hex": "#c9573f"
+    },
+    {
+      "name": "tan_0",
+      "hex": "#5e4a33"
+    },
+    {
+      "name": "tan_1",
+      "hex": "#8d7550"
+    },
+    {
+      "name": "tan_2",
+      "hex": "#b59a6c"
     }
   ],
   "ramps": {
@@ -340,6 +364,16 @@
       "cloth_0",
       "cloth_0",
       "cloth_1"
+    ],
+    "red": [
+      "red_0",
+      "red_1",
+      "red_2"
+    ],
+    "tan": [
+      "tan_0",
+      "tan_1",
+      "tan_2"
     ]
   },
   "emissive": [
