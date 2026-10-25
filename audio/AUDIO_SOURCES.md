@@ -1,8 +1,11 @@
 # Audio sources
 
 Every file here comes from a public sound library under CC0 1.0. The rest of the game's sounds
-(impacts, armour pings, wood hits, pickups, the dry click, the melee swish) are synthesised at
-runtime in src/game/audio.ts. Every file is re-encoded to AAC (.m4a), which every browser plays,
+are synthesised at runtime in src/game/audio.ts: impacts, armour pings, wood hits, pickups, the dry
+click, melee swishes, the shotgun pump, the sniper bolt, brass, shell-by-shell and belt reloads,
+weapon switches, grenade pins and landings, blasts and falling grit, burning petrol, footsteps, the
+day wind and birds, storm rain, the generator's hum, campfire crackle, the heartbeat, the merchant's
+bell, coins and the UI ticks. Every file is re-encoded to AAC (.m4a), which every browser plays,
 iPhone Safari included.
 
 - `pistol-shot.m4a`: "Single Pistol Gunshot 3.2.wav" by morganpurkis, Freesound, CC0 1.0. https://freesound.org/people/morganpurkis/sounds/388194/

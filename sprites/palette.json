@@ -87,6 +87,10 @@
       "hex": "#a46a40"
     },
     {
+      "name": "wood_2",
+      "hex": "#d19a62"
+    },
+    {
       "name": "cloth_0",
       "hex": "#66605a"
     },
@@ -326,6 +330,16 @@
       "charcoal_0",
       "charcoal_0",
       "charcoal_1"
+    ],
+    "wood": [
+      "leather_1",
+      "leather_2",
+      "wood_2"
+    ],
+    "cloth_lo": [
+      "cloth_0",
+      "cloth_0",
+      "cloth_1"
     ]
   },
   "emissive": [
