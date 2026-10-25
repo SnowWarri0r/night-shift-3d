@@ -1,18 +1,32 @@
 # Audio sources
 
-Every file here comes from a public sound library under CC0 1.0. The rest of the game's sounds
-are synthesised at runtime in src/game/audio.ts: impacts, armour pings, wood hits, pickups, the dry
-click, melee swishes, the shotgun pump, the sniper bolt, brass, shell-by-shell and belt reloads,
-weapon switches, grenade pins and landings, blasts and falling grit, burning petrol, footsteps, the
-day wind and birds, storm rain, the generator's hum, campfire crackle, the heartbeat, the merchant's
-bell, coins and the UI ticks. Every file is re-encoded to AAC (.m4a), which every browser plays,
+Every file here comes from a public sound library under CC0 1.0 (no attribution required; credited anyway). The rest of the game's sounds
+are synthesised at runtime in src/game/audio.ts: armour pings, pickups and loot chimes, brass on the
+ground, weapon switches, grenade pins and landings, falling grit, burning petrol, the day wind and birds, storm
+rain, the generator's hum, campfire crackle, the heartbeat, the merchant's bell, coins and the UI ticks.
+Every file is re-encoded to AAC (.m4a), which every browser plays,
 iPhone Safari included.
 
-- `pistol-shot.m4a`: "Single Pistol Gunshot 3.2.wav" by morganpurkis, Freesound, CC0 1.0. https://freesound.org/people/morganpurkis/sounds/388194/
-- `carbine-shot.m4a`: "Single Gunshot 5.4.wav" by morganpurkis, Freesound, CC0 1.0. https://freesound.org/people/morganpurkis/sounds/391847/
-- `shotgun-shot.m4a`: "shotgun Gunshot.mp3" by ONgiaunbg, Freesound, CC0 1.0. https://freesound.org/people/ONgiaunbg/sounds/687399/
-- `weapon-reload.m4a`: "PistolReloadSound.wav" by MaximBomba, Freesound, CC0 1.0. https://freesound.org/people/MaximBomba/sounds/432139/
-- `zombie-fall.m4a`: "BodyFall.wav" by 000600, Freesound, CC0 1.0. https://freesound.org/people/000600/sounds/187136/
+The sheets (mech, reloads, impacts, zombie-vox, voice, melee, build, blast, ui) hold several clips one after another with
+silence between: each clip was cut out, its leading silence trimmed, cut where it falls quiet, faded and
+peak-normalised, mono 44.1 kHz AAC. The slices are in src/game/sheetsAudio.ts. The gun-*.m4a files are one shot each.
+
+- `gun-pistol.m4a`: "9mm pistol shot" by michorvath, Freesound, CC0 1.0. https://freesound.org/people/michorvath/sounds/427592/
+- `gun-revolver.m4a`: "357 Magnum Revolver Gunshot" by Shark_Anthony, Freesound, CC0 1.0. https://freesound.org/people/Shark_Anthony/sounds/683186/
+- `gun-smg.m4a`: "An automatic rifle being shot once // punchy sounding" by serøutōnin--deprivəd, Freesound, CC0 1.0. https://freesound.org/people/ser%C3%B8ut%C5%8Dnin--depriv%C9%99d/sounds/855654/
+- `gun-rifle.m4a`: "AR15 rifle shot" by michorvath, Freesound, CC0 1.0. https://freesound.org/people/michorvath/sounds/427596/
+- `gun-lmg.m4a`: "An AK-47 being shot // has distinctive metallic kalashnikov-esque report" by serøutōnin--deprivəd, Freesound, CC0 1.0. https://freesound.org/people/ser%C3%B8ut%C5%8Dnin--depriv%C9%99d/sounds/855841/
+- `gun-sniper.m4a`: "Sniper Rifle" by SuperPhat, Freesound, CC0 1.0. https://freesound.org/people/SuperPhat/sounds/514228/
+- `gun-shotgun.m4a`: "20 gauge shotgun gunshot" by michorvath, Freesound, CC0 1.0. https://freesound.org/people/michorvath/sounds/427595/
+- `mech.m4a` (a magazine out, one in and the charge, a pump, a bolt action, a dry fire): "AK-47 Assault Rifle being unloaded and reloaded" by serøutōnin--deprivəd, Freesound, CC0 1.0. https://freesound.org/people/ser%C3%B8ut%C5%8Dnin--depriv%C9%99d/sounds/674742/; "Shotgun Rack Sample.wav" by Krovi, Freesound, CC0 1.0. https://freesound.org/people/Krovi/sounds/613801/; "22 Bolt.wav" by Danwardvs, Freesound, CC0 1.0. https://freesound.org/people/Danwardvs/sounds/204204/; "9mm Handgun Being Dry Fired" by serøutōnin--deprivəd, Freesound, CC0 1.0. https://freesound.org/people/ser%C3%B8ut%C5%8Dnin--depriv%C9%99d/sounds/674568/
+- `reloads.m4a` (whole reloads of a pistol, a revolver, a submachine gun and a machine gun with their pauses squeezed; a bolt opened and closed, a round pressed in, three shotgun shells): "PistolReloadSound.wav" by MaximBomba, Freesound, CC0 1.0. https://freesound.org/people/MaximBomba/sounds/432139/; "Clean Revolver Reload" by Dredile, Freesound, CC0 1.0. https://freesound.org/people/Dredile/sounds/177863/; "Uzi submachine gun being reloaded while empty. Full sequence" by serøutōnin--deprivəd, Freesound, CC0 1.0. https://freesound.org/people/ser%C3%B8ut%C5%8Dnin--depriv%C9%99d/sounds/677160/; "Machine_Gun_Reload.wav" by ken788, Freesound, CC0 1.0. https://freesound.org/people/ken788/sounds/386777/; "Mauser 98k - bolt-action mechanism sound" by Walking.With.Microphones, Freesound, CC0 1.0. https://freesound.org/people/Walking.With.Microphones/sounds/802673/; "Pushing 50 Cal BMG Round into Magazine" by qubodup, Freesound, CC0 1.0. https://freesound.org/people/qubodup/sounds/855580/; "shell load.ogg" by CeebFrack, Freesound, CC0 1.0. https://freesound.org/people/CeebFrack/sounds/108793/; "Shotgun Shell Load" by Bratish, Freesound, CC0 1.0. https://freesound.org/people/Bratish/sounds/500293/
+- `impacts.m4a` (four bullet hits cut from one take, two gore bursts, a ricochet, a body fall): "VisceralBulletImpacts.wav" by u1769092, Freesound, CC0 1.0. https://freesound.org/people/u1769092/sounds/423301/; "Gore Impact - "LOT OF HEART"" by magnuswaker, Freesound, CC0 1.0. https://freesound.org/people/magnuswaker/sounds/641046/; "Wet Splat 1.mp3" by nebulasnails, Freesound, CC0 1.0. https://freesound.org/people/nebulasnails/sounds/495118/; "Ricochet 2.wav" by morganpurkis, Freesound, CC0 1.0. https://freesound.org/people/morganpurkis/sounds/392975/; "BODY FALL - V HVY - DIRT" by leonelmail, Freesound, CC0 1.0. https://freesound.org/people/leonelmail/sounds/504626/
+- `zombie-vox.m4a` (24 voices from "Zombies Sound Pack" by artisticdude, OpenGameArt, CC0 1.0, https://opengameart.org/content/zombies-sound-pack, then a bite): "Zombie Bite" by Lukeo135, Freesound, CC0 1.0. https://freesound.org/people/Lukeo135/sounds/518155/
+- `voice.m4a`: "Voice_AdultMale_PainGrunts_09.wav" by MrFossy, Freesound, CC0 1.0. https://freesound.org/people/MrFossy/sounds/547209/; "Male Grunting In Pain" by elynch0901, Freesound, CC0 1.0. https://freesound.org/people/elynch0901/sounds/464486/; "male_hurt9.ogg" by micahlg, Freesound, CC0 1.0. https://freesound.org/people/micahlg/sounds/413186/
+- `melee.m4a`: "Woosh (stick swung in the air)" by Dalesome, Freesound, CC0 1.0. https://freesound.org/people/Dalesome/sounds/352719/; "Bat_hit2" by hashtagsmcgee, Freesound, CC0 1.0. https://freesound.org/people/hashtagsmcgee/sounds/851452/
+- `build.m4a` (four hammer blows cut from one take, two wood breaks): "Hammer on Wood" by L.i.Z.e.L.l.E_+, Freesound, CC0 1.0. https://freesound.org/people/L.i.Z.e.L.l.E_+/sounds/707864/; "Wood Break.wav" by Deathscyp, Freesound, CC0 1.0. https://freesound.org/people/Deathscyp/sounds/443293/; "Crate Break 4.wav" by kevinkace, Freesound, CC0 1.0. https://freesound.org/people/kevinkace/sounds/66780/
+- `blast.m4a` (a grenade, a bottle breaking, petrol catching): "Grenade Explosion SFX (medium-sized, meaty, realistic)" by unfa, Freesound, CC0 1.0. https://freesound.org/people/unfa/sounds/609587/; "Glass Break 1.wav" by mccormick_iain, Freesound, CC0 1.0. https://freesound.org/people/mccormick_iain/sounds/371094/; "Basic Fire whoosh" by LookIMadeAThing, Freesound, CC0 1.0. https://freesound.org/people/LookIMadeAThing/sounds/260554/
+- `ui.m4a`: "Cash Register Purchase" by Zott820, Freesound, CC0 1.0. https://freesound.org/people/Zott820/sounds/209578/; "UI Button Click" by benzix2, Freesound, CC0 1.0. https://freesound.org/people/benzix2/sounds/467951/
 - `search-rustle.m4a`: "Bag Rustle.wav" by binxa, Freesound, CC0 1.0. https://freesound.org/people/binxa/sounds/595827/
 - `craft-metal.m4a`: "Hammer, metal" by 16GPanskaToman_Kristian, Freesound, CC0 1.0. https://freesound.org/people/16GPanskaToman_Kristian/sounds/496263/
 - `security-alarm.m4a`: "Alarm" by Frenchyboy, OpenGameArt, CC0 1.0 (re-encoded to AAC). https://opengameart.org/content/alarm-2
