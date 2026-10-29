@@ -1,8 +1,9 @@
 # Audio sources
 
-Every file here comes from a public sound library under CC0 1.0 (no attribution required; credited anyway). The rest of the game's sounds
-are synthesised at runtime in src/game/audio.ts: the loot chimes, grenade pins, the ring after a close blast,
-the roar of burning petrol, the UI ticks and the night's music.
+Every sound effect here comes from a public sound library under CC0 1.0 (no attribution required; credited anyway). The
+music (music/) was made for the game with Stable Audio 3 Medium (Stability AI); see the end of this file. The rest of the
+game's sounds are synthesised at runtime in src/game/audio.ts: the loot chimes, grenade pins, the ring after a close
+blast, the roar of burning petrol and the UI ticks.
 Every file is re-encoded to AAC (.m4a), which every browser plays,
 iPhone Safari included.
 
@@ -40,3 +41,18 @@ peak-normalised, mono 44.1 kHz AAC. The slices are in src/game/sheetsAudio.ts. T
 - `zombie-steps.m4a`: "footsteps pavement street" by Yuval, Freesound, CC0 1.0. https://freesound.org/people/Yuval/sounds/205817/
 - `horror-ambience.m4a`: "Ambient horror" by techiew, OpenGameArt, CC0 1.0. https://opengameart.org/content/ambient-horror
 - `thunder.m4a`: the first 7 s of "Thunder2" by Yoyodaman234, Freesound, CC0 1.0 (trimmed, faded, re-encoded to AAC). https://freesound.org/people/Yoyodaman234/sounds/267551/
+
+## Music
+
+`music/*.m4a` (menu, day, dusk, night, boss, dawn, gameover) were generated for this game from text prompts with
+Stable Audio 3 Medium (Stability AI, 2026), each picked by ear from three takes, then re-encoded to AAC 96 kbit/s.
+The model is under the Stability AI Community License (https://stability.ai/license): its outputs belong to whoever
+made them, and use is free for anyone below US $1M in annual revenue. The prompts:
+
+- `menu.m4a`: dark cinematic main menu theme for a zombie survival game, slow piano melody over warm strings, a hopeful undertone, 70 BPM
+- `day.m4a`: post-apocalyptic daytime exploration music, lonely clean electric guitar, soft ambient pads, light brushed drums, calm and open, 90 BPM
+- `dusk.m4a`: tense build-up music as night falls, ticking hi-hats, pulsing synth bass, rising strings, suspense growing, 110 BPM
+- `night.m4a`: intense zombie horde combat music, pounding drums, distorted guitar riffs, aggressive synth bass, adrenaline, 150 BPM
+- `boss.m4a`: epic boss battle music, massive taiko drums and orchestral hits, heavy metal guitars, dark choir, 160 BPM
+- `dawn.m4a`: triumphant sunrise theme after surviving the night, uplifting strings and piano, warm brass swell, relief and hope
+- `gameover.m4a`: somber game over music, solo piano, fading strings, quiet and short
