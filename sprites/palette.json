@@ -217,6 +217,18 @@
     {
       "name": "tan_2",
       "hex": "#b59a6c"
+    },
+    {
+      "name": "acid_0",
+      "hex": "#2f5a14"
+    },
+    {
+      "name": "acid_1",
+      "hex": "#6fb82a"
+    },
+    {
+      "name": "acid_2",
+      "hex": "#b8ef4f"
     }
   ],
   "ramps": {
@@ -374,10 +386,21 @@
       "tan_0",
       "tan_1",
       "tan_2"
+    ],
+    "acid": [
+      "acid_0",
+      "acid_1",
+      "acid_2"
+    ],
+    "acid_glow": [
+      "acid_1",
+      "acid_2",
+      "acid_2"
     ]
   },
   "emissive": [
     "eye_glow",
-    "reflect"
+    "reflect",
+    "acid_glow"
   ]
 }
