@@ -229,6 +229,18 @@
     {
       "name": "acid_2",
       "hex": "#b8ef4f"
+    },
+    {
+      "name": "hat_0",
+      "hex": "#8f6a10"
+    },
+    {
+      "name": "hat_1",
+      "hex": "#e0b31c"
+    },
+    {
+      "name": "hat_2",
+      "hex": "#ffe066"
     }
   ],
   "ramps": {
@@ -396,6 +408,11 @@
       "acid_1",
       "acid_2",
       "acid_2"
+    ],
+    "hardhat": [
+      "hat_0",
+      "hat_1",
+      "hat_2"
     ]
   },
   "emissive": [
